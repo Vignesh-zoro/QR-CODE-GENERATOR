@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    
+    background: rgb(31, 30, 30);
+}
+.container{
+        
+     width: 300px;
+      padding: 25px 35px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: rgb(43,38,119);
+      background: linear-gradient(90deg, rgba(43,38,119,1) 0%, rgba(0,212,255,1) 24%, rgba(9,77,121,1) 100%);
+      border-radius: 10px;
+}
+.container p
+{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+.container input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.container #btn{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    padding: 10px 15px;
+    background: yellow;
+    border: 0;
+    outline: 0;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 30px;
+   
+}
+.imgBox{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+.imgBox img{
+    width: 100%;
+    padding: 10px;
+}
+.imgBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 2px solid black;
+   
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
